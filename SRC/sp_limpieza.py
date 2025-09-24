@@ -48,3 +48,4 @@ def convertir_float(df, lista_col):
 def round_decimal(df, lista_col):
     for col in lista_col:
         df[col] = df[col].round(1)
+
