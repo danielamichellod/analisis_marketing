@@ -57,6 +57,38 @@ def subplot_col_cat(dataframe):
     plt.show()
     
 def subplot_col_num(dataframe, col):
+    """
+    Genera subplots con histogramas y boxplots para cada columna numérica proporcionada.
+
+    Para cada columna:
+    - Se muestra un histograma con distribución de frecuencias.
+    - Se muestra un boxplot que ayuda a identificar outliers visualmente.
+    
+    Los gráficos se organizan en varias filas, con dos columnas por fila:
+    - Primera columna: histograma
+    - Segunda columna: boxplot
+
+    Args:
+        dataframe : pandas.DataFrame
+            El DataFrame que contiene los datos numéricos.
+        
+        col : list of str
+            Lista con los nombres de las columnas numéricas a graficar.
+
+    Returns:
+        None
+            La función muestra los gráficos directamente utilizando matplotlib y seaborn.
+            No devuelve ningún valor.
+
+    Notes:
+    ------
+    - Se espera que los nombres en `col` correspondan a columnas numéricas del DataFrame.
+    - El número de filas se calcula automáticamente para acomodar todos los subplots.
+    - Requiere tener `matplotlib.pyplot` como `plt` y `seaborn` como `sns` importados.
+    - Los histogramas usan 200 bins por defecto.
+    - Las etiquetas de los ejes se rotan automáticamente si es necesario.
+    """
+    
     num_graph = len(col)
 
     num_rows = (num_graph +2 )//2
@@ -77,3 +109,4 @@ def subplot_col_num(dataframe, col):
 
     plt.tight_layout()
     plt.show()
+    
