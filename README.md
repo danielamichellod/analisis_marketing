@@ -124,6 +124,7 @@ The analysis of the Portuguese bank’s direct marketing campaigns highlights se
 - **Web engagement metrics enrich traditional campaign data.** Combining online behavior with call-based metrics offers a more complete view of customer interest and helps identify high-priority segments.
 - **Clustering reveals distinct customer profiles.** The segmentation process shows clear groups with different engagement and effort patterns, allowing personalized strategies rather than uniform campaigns.
 - **Outliers and skewed distributions require careful metric selection.** Median- and percentile-based analysis provides more reliable insights than mean-driven metrics.
+
 Overall, the project demonstrates the value of integrating multiple data sources, applying metric engineering, and leveraging clustering to improve decision-making in direct marketing campaigns.
 
 ## 9. Recommendations ✅
